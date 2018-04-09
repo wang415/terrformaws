@@ -21,7 +21,13 @@ variable "aws_region" {
 variable "aws_amis" {
   default = {
     cn-north-1b = "ami-d8578bb5"
-    cn-north-1b = "ami-d8578bb5"
-    cn-north-1b = "ami-d8578bb5"
   }
+}
+
+variable "count" {
+  default = "2"
+}
+
+variable "instance_type" {
+  default = "t2.micro"
 }
